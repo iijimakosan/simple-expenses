@@ -19,8 +19,10 @@
                 <td>収支</td>
                 <td>
                     <select name="balance_of_payment">
-                        <option value="">収入</option>
                         <option value="">支出</option>
+                        <!--
+                        <option value="">収入</option>
+                        -->
                     </select>
                 </td>
             </tr>
@@ -28,8 +30,10 @@
                 <td>決済</td>
                 <td>
                     <select name="settlement">
-                        <option value="">未決済</option>
                         <option value="">決済</option>
+                        <!--
+                        <option value="">未決済</option>
+                        -->
                     </select>
                 </td>
             </tr>
@@ -38,9 +42,11 @@
                 <td>
                     <select name="account">
                         <option value="cash">現金</option>
+                        <!--
                         <option value="amex">アメックス</option>
                         <option value="uccard">UCカード</option>
                         <option value="debitcard">debitcardカード</option>
+                        -->
                     </select>
                 </td>
             </tr>
@@ -54,17 +60,64 @@
                 <td>勘定科目</td>
                 <td>
                     <select name="account">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="">厚生費</option>
+                        <option value="">荷造運賃</option>
+                        <option value="">接待交際費</option>
+                        <option value="">旅費交通費</option>
+                        <option value="">通信費・電話料</option>
+                        <option value="">消耗品費</option>
+                        <option value="">事務用品費</option>
+                        <option value="">修繕費</option>
+                        <option value="">水道光熱費</option>
+                        <option value="">新聞図書費</option>
+                        <option value="">諸会費</option>
+                        <option value="">支払手数料</option>
+                        <option value="">保険料</option>
+                        <option value="">租税公課</option>
+                        <option value="">雑費</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td>口座</td>
+                <td>税区分</td>
                 <td>
-
+                    <select name="tax">
+                        <option value="10">10％</option>
+                        <option value="8">8％</option>
+                        <option value="０">対象外</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>金額</td>
+                <td>
+                    <input type="text" name="amount" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>摘要(品目・詳細等)</td>
+                <td>
+                    <input type="text" name="summary" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>備考</td>
+                <td>
+                    <input type="text" name="remark" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>添付ファイル</td>
+                <td>
+                    <input type="file" name="file" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="送信"/> 
+                    <input type="reset" name="reset" value="リセット"/>           
+                </td>
+                <td>
                 </td>
             </tr>
         </table>
