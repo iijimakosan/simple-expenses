@@ -1,1 +1,176 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>iijimakosan - sample-expenses</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+    <h1>画面(支出)</h1>
+    <hr>
+    <form action="" method="">
+        <table>
+            <tr>
+                <td>収支区分</td>
+                <td>
+                    <select name="balance_of_payment">
+                        <option value="支出">支出</option>
+                        <!--
+                        <option value="">収入</option>
+                        -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>管理番号</td>
+                <td>
+                    <input type="text" name="manage_number" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>発生日(必須)</td>
+                <td>
+                    <input type="date" name="date" value=""/>
+                </td>
+            </tr>
+                <td>支払期日</td>
+                <td>
+                    <input type="date" name="date" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>取引先コード</td>
+                <td>
+                    <input type="text" name="supplier_code" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>取引先</td>
+                <td>
+                    <input type="text" name="supplier_name" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>勘定科目(必須)</td>
+                <td>
+                    <select name="account">
+                        <option value="">厚生費</option>
+                        <option value="">荷造運賃</option>
+                        <option value="">接待交際費</option>
+                        <option value="">旅費交通費</option>
+                        <option value="">通信費・電話料</option>
+                        <option value="">消耗品費</option>
+                        <option value="">事務用品費</option>
+                        <option value="">修繕費</option>
+                        <option value="">水道光熱費</option>
+                        <option value="">新聞図書費</option>
+                        <option value="">諸会費</option>
+                        <option value="">支払手数料</option>
+                        <option value="">保険料</option>
+                        <option value="">租税公課</option>
+                        <option value="">雑費</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>税区分(必須)</td>
+                <td>
+                    <select name="tax_rate">
+                        <option value="10">10％</option>
+                        <option value="8">8％</option>
+                        <option value="０">対象外</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>金額(必須)</td>
+                <td>
+                    <input type="text" name="amount" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>税計算区分</td>
+                <td>
+                    <select name="tax_calc">
+                        <option value="内税">内税</option>
+                        <option value="外税">外税</option>
+                        <option value="税込">税込</option>
+                        <option value=""></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>税額</td>
+                <td>
+                    <input type="text" name="amount" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>備考</td>
+                <td>
+                    <input type="text" name="remark" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>品目</td>
+                <td>
+                    <input type="text" name="item" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>部門</td>
+                <td>
+                    <input type="text" name="section" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>メモタグ</td>
+                <td>
+                    <input type="text" name="memo_tag" value=""/>
+                </td>
+            </tr>
+            </tr>
+                <td>決済日</td>
+                <td>
+                     <input type="settlement_date" name="date" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>決済口座</td>
+                <td>
+                    <select name="settlement_account">
+                        <option value="cash">現金</option>
+                        <!--
+                        <option value="amex">アメックス</option>
+                        <option value="uccard">UCカード</option>
+                        <option value="debitcard">debitcardカード</option>
+                        -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>金額</td>
+                <td>
+                    <input type="text" name="settlement_amount" value=""/>
+                </td>
+            </tr>
 
+
+
+            <tr>
+                <td>添付ファイル</td>
+                <td>
+                    <input type="file" name="file" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="送信"/> 
+                    <input type="reset" name="reset" value="リセット"/>           
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </form> 
+</body>
+</html>
